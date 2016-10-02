@@ -5,4 +5,5 @@ RUN \
     apk add rsync && \
     apk add openssh && \
     true
-ENTRYPOINT rsync
+ENTRYPOINT ["rsync"]
+CMD ["--help"]
